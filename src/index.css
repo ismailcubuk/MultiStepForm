@@ -5,7 +5,6 @@
 }
 
 .main-border {
-  border: 2px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,13 +12,15 @@
   height: 100vh;
   min-height: 600px;
   min-width: 1000px;
+  background-color: #d0e2fc;
 }
 
 .border {
-  border: 2px solid blue;
+  background-color: white;
   display: flex;
   width: 50%;
   height: 70%;
   min-width: 1000px;
   min-height: 550px;
+  border-radius: 20px;
 }

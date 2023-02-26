@@ -13,9 +13,9 @@ function App() {
         <div>
           {/* <YourInfo /> */}
           {/* <SelectPlan /> */}
-          {/* <AddOns /> */}
+          <AddOns />
           {/* <Summary /> */}
-          <Final />
+          {/* <Final /> */}
         </div>
       </div>
     </div>
