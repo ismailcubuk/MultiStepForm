@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import YourInfo from "./components/1-Your-info/YourInfo";
+import SelectPlan from "./components/2-Select-plan/SelectPlan";
+import AddOns from "./components/3-Add-ons/AddOns";
+import Summary from "./components/4-Summary/Summary";
+import Final from "./components/5-Final/Final";
+import Step from "./components/Step/Step";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-border">
+      <div className="border">
+        <Step />
+        <div>
+          {/* <YourInfo /> */}
+          {/* <SelectPlan /> */}
+          {/* <AddOns /> */}
+          {/* <Summary /> */}
+          <Final />
+        </div>
+      </div>
     </div>
   );
 }

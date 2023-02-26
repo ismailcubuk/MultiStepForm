@@ -1,0 +1,53 @@
+.main {
+    width: 680px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    position: relative;
+    border: 2px solid red;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.header>h1 {
+    font-size: 35px;
+}
+
+.header>p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* İNPUT */
+.your-info-form>h3 {
+    margin-bottom: 5px;
+}
+
+.your-info-form>input {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+/* buton */
+
+
+.next-btn {
+    color: white;
+    background-color: blue;
+    border: none;
+    padding: 15px 30px;
+    display: flex;
+    border-radius: 10px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+}

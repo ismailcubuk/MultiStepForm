@@ -1,0 +1,33 @@
+.add-ons>button {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.add-ons>button>div {
+    display: flex;
+}
+
+.add-ons>button>div>input {
+    width: 15px;
+    margin-right: 20px;
+}
+
+.add-ons>button>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.add-ons>button>div>div>h4 {
+    opacity: 0.6;
+}
+
+.add-ons-money {
+    color: blue;
+}
