@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import FormContext from '../../context/FormContext';
 import './YourInfo.css';
 function YourInfo() {
+    const { count, setCount } = useContext(FormContext)
+    const firstClick = () => {
+        setCount(count + 1)
+    }
     return (
         <div className='main'>
             <div className='header'>
@@ -16,7 +21,7 @@ function YourInfo() {
                 <input type="text" />
             </div>
             <div className='buton-div'>
-                <button className='next-btn'>
+                <button className='next-btn' onClick={firstClick}>
                     Next Step
                 </button>
             </div>

@@ -2,6 +2,9 @@
     color: gray;
     font-weight: 600;
     text-decoration: underline;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .summary>div {
