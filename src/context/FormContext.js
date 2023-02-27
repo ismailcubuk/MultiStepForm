@@ -34,7 +34,7 @@ export const FormContextprovider = ({ children }) => {
         largerStorageActive ? setMoney(money + largerStorageMoney) : setMoney(money - largerStorageMoney)
     }, [largerStorageActive])
     useEffect(() => {
-        customProfileeActive ? setMoney(money + largerStorageMoney) : setMoney(money - largerStorageMoney)
+        customProfileeActive ? setMoney(money + customProfileMoney) : setMoney(money - customProfileMoney)
     }, [customProfileeActive])
 
     // SELECT PLAN
@@ -52,24 +52,36 @@ export const FormContextprovider = ({ children }) => {
         setArcadeActive(true)
         setAdvancedActive(false)
         setProActive(false)
-        setMoney(arcadeMoney)
         setTax(arcadeMoney)
+        setCustomProfileActive(false)
+        setLargerStorageActive(false)
+        setOnlineServiceActive(false)
     }
+    useEffect(() => {
+        ArcadeActive ? setMoney(arcadeMoney) : AdvancedActive ? setMoney(advancedMoney) : ProActive ? setMoney(proMoney) : setMoney("")
+    }, [ArcadeActive, AdvancedActive, ProActive])
+
+
     const AdvancedClick = () => {
         setPlan("Advanced")
         setAdvancedActive(true)
         setArcadeActive(false)
         setProActive(false)
-        setMoney(advancedMoney)
         setTax(advancedMoney)
+        setCustomProfileActive(false)
+        setLargerStorageActive(false)
+        setOnlineServiceActive(false)
     }
+
     const ProClick = () => {
         setPlan("Pro")
         setProActive(true)
         setAdvancedActive(false)
         setArcadeActive(false)
-        setMoney(proMoney)
         setTax(proMoney)
+        setCustomProfileActive(false)
+        setLargerStorageActive(false)
+        setOnlineServiceActive(false)
     }
     const [isChecked, setIsChecked] = useState(false)
     const handleCheckboxChange = () => {
