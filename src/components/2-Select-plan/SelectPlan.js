@@ -24,7 +24,6 @@ function SelectPlan() {
                 <h1>Select your plan</h1>
                 <p>You have the option of monthly or yearly billing.</p>
             </div>
-            {plan}asd{date}
             <div className='plans'>
                 <button value={arcadeMoney} onClick={arcadeClick} style={ArcadeActive ? border : null}>
                     <img src={arcade} alt="arcade" />

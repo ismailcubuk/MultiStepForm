@@ -8,12 +8,9 @@ import Step from "./components/Step/Step";
 import FormContext from "./context/FormContext";
 
 function App() {
-  const { count, money, totalMoney } = useContext(FormContext)
+  const { count } = useContext(FormContext)
   return (
     <div className="main-border">
-      {money}
-      <br />
-      {totalMoney}
       <div className="border">
         <Step />
         <div>
