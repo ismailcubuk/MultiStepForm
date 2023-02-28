@@ -12,7 +12,7 @@
   height: 100vh;
   min-height: 600px;
   min-width: 1000px;
-  background-color: #d0e2fc;
+  background-color: #cfe2fc;
 }
 
 .border {
@@ -23,4 +23,222 @@
   min-width: 1000px;
   min-height: 550px;
   border-radius: 20px;
+  box-shadow: 0 0 25px #006aff;
+}
+
+
+/* btn */
+.next-btn {
+  color: white;
+  background-color: rgb(139, 139, 255);
+  border: none;
+  padding: 15px 30px;
+  display: flex;
+  border-radius: 10px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.next-btn:disabled {
+  background-color: gray;
+}
+
+.next-btn:hover {
+  background-color: blue;
+}
+
+.next-btn:disabled:hover {
+  background-color: gray;
+}
+
+.go-back {
+  color: gray;
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: 15px 30px;
+  display: flex;
+  border-radius: 10px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  cursor: pointer;
+}
+
+.go-back:hover {
+  border: 2px solid blue;
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+}
+
+.page1next {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation-name: next1;
+  animation-duration: 0.5s;
+}
+
+.page2next {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation-name: next2;
+  animation-duration: 0.5s;
+}
+
+.page3next {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation-name: next3;
+  animation-duration: 0.5s;
+}
+
+.page4next {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation-name: next4;
+  animation-duration: 0.5s;
+}
+
+
+
+@keyframes next1 {
+  0% {
+    left: 40%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes next2 {
+  0% {
+    left: 40%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes next3 {
+  0% {
+    left: 40%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes next4 {
+  0% {
+    left: 40%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+
+.page1back {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation-name: back1;
+  animation-duration: 0.5s;
+}
+
+.page2back {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation-name: back2;
+  animation-duration: 0.5s;
+}
+
+.page3back {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation-name: back3;
+  animation-duration: 0.5s;
+}
+
+.page4back {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation-name: back4;
+  animation-duration: 0.5s;
+}
+
+@keyframes back1 {
+  0% {
+    right: 40%;
+    opacity: 0;
+  }
+
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes back2 {
+  0% {
+    right: 40%;
+    opacity: 0;
+  }
+
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes back3 {
+  0% {
+    right: 40%;
+    opacity: 0;
+  }
+
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes back4 {
+  0% {
+    right: 40%;
+    opacity: 0;
+  }
+
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
 }

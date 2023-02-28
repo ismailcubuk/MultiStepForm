@@ -1,4 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react'
+import * as Yup from 'yup';
+import { useFormik, Field } from 'formik'
+
 const FormContext = createContext();
 
 export const FormContextprovider = ({ children }) => {
@@ -116,7 +119,34 @@ export const FormContextprovider = ({ children }) => {
             setTax(tax / 10)
         }
     }, [isChecked])
+
+    const formik = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            phone: '',
+        },
+        validationSchema: Yup.object({
+            name: Yup.string()
+                .required('Name and surname cannot be empty'),
+            email: Yup.string()
+                .email('Invalid email address')
+                .required('Email address cannot be empty'),
+            phone: Yup.string()
+                .matches(/^\(\d{3}\) \d{3}-\d{4}$/, 'Phone number is not valid')
+                .required('Phone number is required'),
+        }),
+        onSubmit: values => {
+            console.log('form data', values);
+            setCount(count + 1)
+            setPage(`page${count}next`)
+        },
+    })
+    const [page, setPage] = useState()
     const data = {
+        setPage,
+        page,
+        formik,
         tax,
         customProfileMoney,
         largerStorageMoney,

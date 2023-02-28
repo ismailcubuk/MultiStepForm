@@ -8,20 +8,16 @@ import Step from "./components/Step/Step";
 import FormContext from "./context/FormContext";
 
 function App() {
-  const { count } = useContext(FormContext)
+  const { count, page } = useContext(FormContext)
   return (
     <div className="main-border">
-      <div className="border">
-        <Step />
-        <div>
-          {count === 1 ? <YourInfo /> :
-            count === 2 ? <SelectPlan /> :
-              count === 3 ? <AddOns /> :
-                count === 4 ? <Summary /> :
-                  count === 5 ? <Final /> : null
-          }
-
-        </div>
+      <div>
+        {count === 1 ? <div className={page}><YourInfo /></div> :
+          count === 2 ? <div className={page}><SelectPlan /></div> :
+            count === 3 ? <div className={page}><AddOns /></div> :
+              count === 4 ? <div className={page}><Summary /></div> :
+                count === 5 ? <div className={page}><Final /> </div> : null
+        }
       </div>
     </div>
   );

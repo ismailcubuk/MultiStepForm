@@ -1,6 +1,6 @@
 .main {
     width: 680px;
-    height: 100%;
+    height: 550px;
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -21,8 +21,8 @@
 }
 
 /* İNPUT */
-.form-control>h3 {
-    margin-bottom: 5px;
+.form-control>label>h3 {
+    margin-left: 10px;
 }
 
 .form-control>input {
@@ -34,23 +34,29 @@
     font-weight: 600;
 }
 
+/* validation */
 .error {
+    display: flex;
+    justify-content: flex-end;
     color: red;
+    margin: -20px 10px -20px 0px;
+    padding-bottom: 22px;
 }
 
-/* buton */
 
+.slide-container {
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
 
-.next-btn {
+.slide-container.show {
+    transform: translateX(0%);
+}
+
+.slide-content {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
     color: white;
-    background-color: blue;
-    border: none;
-    padding: 15px 30px;
-    display: flex;
-    border-radius: 10px;
-    font-size: 20px;
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    cursor: pointer;
 }
