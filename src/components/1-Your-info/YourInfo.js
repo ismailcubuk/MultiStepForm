@@ -31,7 +31,7 @@ function YourInfo() {
 
 
                     <div className='form-control'>
-                        <label htmlFor="name"><h3>Email Adress</h3></label>
+                        <label htmlFor="email"><h3>Email Adress</h3></label>
                         <input
                             type="email"
                             id='email'
@@ -46,7 +46,7 @@ function YourInfo() {
 
 
                     <div className='form-control'>
-                        <label htmlFor="name"><h3>Phone Number</h3></label>
+                        <label htmlFor="phone"><h3>Phone Number</h3></label>
                         <InputMask
                             onChange={formik.handleChange}
                             type="phone"
