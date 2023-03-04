@@ -11,7 +11,6 @@ function YourInfo() {
             <Step />
             <div className='main'>
                 <div className='header'>
-                    dsadsadsa
                     <h1>Personal info</h1>
                     <p>Please provide your name, email adress, and phone number.</p>
                 </div>

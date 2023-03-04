@@ -16,6 +16,7 @@ function AddOns() {
     }
     const border = {
         border: "2px solid blue",
+        padding: "19px"
     }
     return (
         <div className="border">
